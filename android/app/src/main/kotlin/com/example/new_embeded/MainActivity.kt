@@ -1,4 +1,4 @@
-package com.agust.ui.flutter_ui_sample
+package com.example.new_embeded
 
 import io.flutter.embedding.android.FlutterActivity
 
