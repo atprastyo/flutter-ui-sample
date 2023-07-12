@@ -21,10 +21,11 @@ class AppTheme {
       ),
     ),
     inputDecorationTheme: const InputDecorationTheme(
-        enabledBorder: enabledBorder,
-        focusedBorder: focusedBorder,
-        errorBorder: errorBorder,
-        border: inputBorder),
+      enabledBorder: enabledBorder,
+      focusedBorder: focusedBorder,
+      errorBorder: errorBorder,
+      border: inputBorder,
+    ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(backgroundColor: primaryColor),
     ),
@@ -34,37 +35,17 @@ class AppTheme {
     fontFamily: AppString.appFont,
     textTheme: const TextTheme(
       labelSmall: TextStyle(color: Colors.white),
-      headlineSmall: TextStyle(
-        fontSize: 24,
-        fontWeight: FontWeight.w700,
-        color: Colors.white,
-      ),
-      labelLarge: TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.w700,
-        color: Colors.white,
-      ),
-      labelMedium: TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.w700,
-        color: Colors.white,
-      ),
-      bodyMedium: TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-        color: Colors.white,
-      ),
-      bodySmall: TextStyle(
-        fontSize: 12,
-        fontWeight: FontWeight.w500,
-        color: Colors.white,
-      ),
+      headlineSmall: headLineSmall,
+      labelLarge: labelLarge,
+      labelMedium: labelMedium,
+      bodyMedium: bodyMedium,
+      bodySmall: bodySmall,
     ),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
-        foregroundColor: Colors.black54,
+        foregroundColor: Colors.white,
         shape: const RoundedRectangleBorder(
-          side: BorderSide(color: Colors.grey),
+          borderRadius: BorderRadius.all(Radius.circular(8)),
         ),
       ),
     ),

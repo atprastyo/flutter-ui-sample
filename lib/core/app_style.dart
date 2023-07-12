@@ -19,58 +19,58 @@ const List<Color> colorList = [
   Color(0xFFC0CA33),
 ];
 
-const headLine6 = TextStyle(
+const bodySmall = TextStyle(
+  fontFamily: 'Roboto',
   fontSize: 12,
   fontWeight: FontWeight.w500,
   color: Colors.grey,
   overflow: TextOverflow.ellipsis,
 );
 
-const headLine5 = TextStyle(fontSize: 15, fontWeight: FontWeight.bold);
+const bodyMedium = TextStyle(
+  fontFamily: 'Roboto',
+  fontSize: 14,
+  fontWeight: FontWeight.w500,
+  color: Colors.white,
+);
 
-const headLine4 = TextStyle(
+const labelMedium = TextStyle(
+  fontFamily: 'Roboto',
+  fontSize: 14,
+  fontWeight: FontWeight.w700,
+  color: Colors.white,
+);
+
+const labelLarge = TextStyle(
+  fontFamily: 'Roboto',
   fontSize: 16,
   fontWeight: FontWeight.w700,
   overflow: TextOverflow.ellipsis,
+  color: Colors.white,
 );
 
-const headLine3 = TextStyle(
-  fontSize: 17,
-  fontWeight: FontWeight.w700,
-  overflow: TextOverflow.ellipsis,
+const headLineSmall = TextStyle(
+  fontFamily: 'Roboto',
+  fontSize: 24,
+  fontWeight: FontWeight.w900,
+  color: Colors.white,
 );
-
-const headLine2 = TextStyle(
-  fontSize: 18,
-  fontWeight: FontWeight.bold,
-  overflow: TextOverflow.ellipsis,
-);
-
-const headLine1 = TextStyle(fontSize: 20, fontWeight: FontWeight.w900);
 
 const focusedBorder = OutlineInputBorder(
-  borderSide: BorderSide(color: Colors.black54, width: 2.0),
-  borderRadius: BorderRadius.all(Radius.circular(10.0)),
+  borderSide: BorderSide(color: Colors.white, width: .8),
+  borderRadius: BorderRadius.all(Radius.circular(8.0)),
 );
 
-const enabledBorder = OutlineInputBorder(
-  borderSide: BorderSide(color: Colors.black12, width: 1.0),
-  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-);
+const enabledBorder = InputBorder.none;
+
+const inputBorder = InputBorder.none;
 
 const errorBorder = OutlineInputBorder(
-  borderSide: BorderSide(width: 3, color: Colors.redAccent),
-  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-);
-
-const inputBorder = OutlineInputBorder(
-  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-  borderSide: BorderSide(color: Colors.redAccent),
+  borderSide: BorderSide(width: .8, color: Colors.redAccent),
+  borderRadius: BorderRadius.all(Radius.circular(8.0)),
 );
 
 const focusedErrorBorder = OutlineInputBorder(
-  borderSide: BorderSide(width: 3, color: Colors.redAccent),
-  borderRadius: BorderRadius.all(
-    Radius.circular(10.0),
-  ),
+  borderSide: BorderSide(width: .8, color: Colors.redAccent),
+  borderRadius: BorderRadius.all(Radius.circular(8.0)),
 );
